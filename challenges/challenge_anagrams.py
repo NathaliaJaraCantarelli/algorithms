@@ -33,7 +33,7 @@ def is_anagram(first_string, second_string):
     second_string = order(second_string.lower())
 
     if len(first_string) == 0 or len(
-        second_string) == 0 or first_string != second_string:
+    second_string) == 0 or first_string != second_string:
         return (first_string, second_string, False)
 
     else:
