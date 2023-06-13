@@ -29,12 +29,11 @@ def order(string):
 
 
 def is_anagram(first_string, second_string):
-    first_string = order(first_string.lower())
-    second_string = order(second_string.lower())
+    first = order(first_string.lower())
+    second = order(second_string.lower())
 
-    if len(first_string) == 0 or len(
-    second_string) == 0 or first_string != second_string:
-        return (first_string, second_string, False)
+    if len(first) == 0 or len(second) == 0 or first != second:
+        return (first, second, False)
 
     else:
-        return (first_string, second_string, True)
+        return (first, second, True)
